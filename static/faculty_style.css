@@ -1,0 +1,351 @@
+body{
+    background:linear-gradient(90deg,rgb(146, 248, 240),rgb(4, 209, 236));
+}
+nav {
+            background-color: #333;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+           
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+             font-size: large;
+            font-family:  'Times New Roman';
+        }
+
+   
+
+        header {
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 3rem 1rem;
+        }
+        .logo{
+            background-color: rgb(0, 110, 255);
+            display: flex;
+            justify-content: center;
+            color: #f4f4f4;
+        }
+        h1{
+            font: bold ;
+
+        }
+        .footer{
+            background-color: white;
+            text-align: center;
+
+        }
+        .directory{
+             body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f5f7fa;
+        margin: 0;
+        padding: 40px;
+        color: #333;
+    }
+
+    h1 {
+        text-align: center;
+        color: #2c3e50;
+        margin-bottom: 30px;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    li {
+        background-color: #fff;
+        padding: 20px;
+        margin-bottom: 15px;
+        border-radius: 10px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    li img {
+        border-radius: 8px;
+        margin-left: 20px;
+        max-width: 100px;
+        height: auto;
+    }
+
+    li a {
+        font-weight: bold;
+        text-decoration: none;
+        color: #2980b9;
+    }
+
+    li a:hover {
+        text-decoration: underline;
+    }
+
+    a[href="/add"] {
+        display: block;
+        text-align: center;
+        margin-top: 30px;
+        padding: 12px 20px;
+        background-color: #27ae60;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 8px;
+        width: 150px;
+        margin-left: auto;
+        margin-right: auto;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+    }
+
+    a[href="/add"]:hover {
+        background-color: #219150;
+    }
+        }
+         .addfaculty{
+             body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        form {
+            background-color: #ffffff;
+            padding: 30px 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            width: 100%;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 25px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="file"],
+        textarea {
+            width: 100%;
+            padding: 10px 12px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            resize: vertical;
+            height: 100px;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            font-size: 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            width: 100%;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    }
+    .about{
+        p{
+        padding: 40px;
+        max-width: 900px;
+        margin: 30px auto;
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        font-size: 16px;
+        line-height: 1.8;
+        color: #333;
+        text-align: justify;
+    }
+}
+ /* FACULTY LIST STYLING */
+
+body {
+    background-color: #f5f7fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Directory container */
+.directory {
+    max-width: 1200px;
+    margin: 80px auto 40px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.directory h1 {
+    color: #003366;
+    margin-bottom: 30px;
+    font-size: 32px;
+}
+
+/* Faculty cards grid */
+.directory ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Individual card */
+.faculty-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    margin: 15px;
+    padding: 20px;
+    text-align: center;
+    width: 260px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.faculty-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.faculty-card img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.faculty-card h2 {
+    font-size: 20px;
+    color: #003366;
+    margin: 10px 0 5px 0;
+}
+
+.faculty-card p {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Add Faculty Button */
+a[href="/add"] {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 12px 24px;
+    background-color: #27ae60;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+a[href="/add"]:hover {
+    background-color: #219150;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+    .faculty-card {
+        width: 90%;
+    }
+}
+
+        }
+         .addfaculty{
+             body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        form {
+            background-color: #ffffff;
+            padding: 30px 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            width: 100%;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 25px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="file"],
+        textarea {
+            width: 100%;
+            padding: 10px 12px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            resize: vertical;
+            height: 100px;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            font-size: 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            width: 100%;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }

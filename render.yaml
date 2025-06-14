@@ -1,0 +1,12 @@
+# Exported from Render on 2025-06-13T04:20:54Z
+services:
+- type: web
+  name: Faculty-directory-system-render
+  runtime: python
+  repo: https://github.com/navaneetha-krishnan27/Faculty-directory-system-render
+  plan: free
+  region: oregon
+  buildCommand: pip install -r requirements.txt
+  startCommand: gunicorn app:app
+  autoDeployTrigger: commit
+version: "1"

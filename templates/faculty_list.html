@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty list</title>
+     <link rel="stylesheet" href="/static/facultystyle.css">
+
+    </head>
+    <body>
+    <header> 
+        
+            <div class="logo">
+        
+            <img src="/static/image/logo2.png" height="60" width="60"><br> <p><strong>ALAGAPPA UNIVERSITY
+State University <br>| A++ by NAAC (CGPA : 3.59) Dual Mode in the 4th Cycle | Category - I University by UGC <br>
+Karaikudi - 630 003, Tamil Nadu, India</strong></p><br>
+<img src="/static/image/founder_logo.png" height="60" width="60">
+                       
+</div>
+        <h1>ALAGAPPA FACULTY DIRECTORY SYSTEM</h1>
+            <div>
+            <nav>
+                <ul>
+                    <li><a href="/">home</a></li>
+        <li><a href="/showfaculty">faculty</a></li>
+        <li><a href="/login">admin page</a></li>
+        <li><a href="/about">about us</a></li>
+                </ul>
+            </nav>
+            </div>
+        </header>
+        <br>
+        <center>
+        <div class="search-container">
+    <form action="/search" method="GET">
+      <input type="text" name="query" class="search-box" placeholder="Search...">
+      <button type="submit" class="search-button">Search</button>
+    </form>
+  </div>
+  </center>
+    <div class="directory">
+     <h1>Faculty Members</h1>
+    <ul>
+        {% for f in faculty %}
+  <div class="faculty-card">
+    <a href="/faculty/{{ f[0] }}">
+      <img src="{{ url_for('static', filename='photos/' ~ f[4]) }}" onerror="this.onerror=null; this.src='/image/image_icon.jpg';" alt="Photo" width="100"><br>
+     <diV class="main">
+       <h2>{{ f[1] }}</h2>
+      <p>{{ f[2] }} - {{ f[3] }}</p>
+      </diV>
+    </a>
+  </div>
+{% endfor %}
+
+    </ul>
+    
+    </div>
+    <div class="pagination">
+    {% if page > 1 %}
+        <a href="{{ url_for('show_faculty', page=page-1) }}">Previous</a>
+    {% endif %}
+
+    {% for p in range(1, total_pages + 1) %}
+        {% if p == page %}
+            <strong>{{ p }}</strong>
+        {% else %}
+            <a href="{{ url_for('show_faculty', page=p) }}">{{ p }}</a>
+        {% endif %}
+    {% endfor %}
+
+    {% if page < total_pages %}
+        <a href="{{ url_for('show_faculty', page=page+1) }}">Next</a>
+    {% endif %}
+</div>
+
+    <div class="video-background">
+    <video autoplay loop muted playsinline>
+      <source src="/static/video/tronlegacy2.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+     <footer>
+            <div class="footer"> 
+                <a href="https://www.alagappauniversity.ac.in/homepage">CLICK HERE<br>FOR INFORMATION VISIT OUR OFFICIAL WEBSITE</a>  
+                <center><br>© 2025 Alagappa University, Karaikudi, Tamilnadu</center>
+            </div>
+        </footer>
+</body>
+</html>

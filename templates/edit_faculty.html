@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty list edit</title>
+     <link rel="stylesheet" href="/static/facultystyle.css">
+
+    </head>
+<body>
+    <header> 
+        
+            <div class="logo">
+        
+            <img src="/static/image/logo2.png" height="60" width="60"><br> <p><strong>ALAGAPPA UNIVERSITY
+State University <br>| A++ by NAAC (CGPA : 3.59) Dual Mode in the 4th Cycle | Category - I University by UGC <br>
+Karaikudi - 630 003, Tamil Nadu, India</strong></p><br>
+<img src="/static/image/founder_logo.png" height="60" width="60">
+                       
+</div>
+        <h1>ALAGAPPA FACULTY DIRECTORY SYSTEM</h1>
+            <div>
+            <nav>
+                <ul>
+                    <li><a href="/">home</a></li>
+        <li><a href="/showfaculty">faculty</a></li>
+        <li><a href="/login">admin page</a></li>
+        <li><a href="/about">about us</a></li>
+                </ul>
+            </nav>
+            </div>
+        </header>
+        <br>
+        <center>
+    <h1 style="color: #ffcc00;">Edit Faculty Member</h1>
+    <div class='faculty-form'>
+        
+    <form method="post">
+        <input type="text" name="name" value="{{ faculty[1] }}" required><br>
+        <input type="text" name="title" value="{{ faculty[2] }}"><br>
+        <input type="text" name="department" value="{{ faculty[3] }}"><br>
+        <input type="email" name="email" value="{{ faculty[4] }}"><br>
+        <input type="text" name="phone" value="{{ faculty[5] }}"><br>
+        <textarea name="bio">{{ faculty[6] }}</textarea><br>
+        <input type="submit" value="Update">
+    </form>
+    <a href="/admin_dashboard">Back to List</a>
+    </div>
+    <div class="video-background">
+    <video autoplay loop muted playsinline>
+      <source src="/static/video/tronlegacy2.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+     <footer>
+            <div class="footer"> 
+                <a href="https://www.alagappauniversity.ac.in/homepage">CLICK HERE<br>FOR INFORMATION VISIT OUR OFFICIAL WEBSITE</a>  
+                <center><br>© 2025 Alagappa University, Karaikudi, Tamilnadu</center>
+            </div>
+        </footer>
+</body>
+</html>

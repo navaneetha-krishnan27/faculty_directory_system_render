@@ -1,0 +1,538 @@
+/* Reset and base styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: linear-gradient(to right, #003366, #0055a5);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 5px solid #ffcc00;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.logo img {
+    border-radius: 8px;
+}
+
+.logo p {
+    max-width: 600px;
+    font-size: 14px;
+}
+
+h1 {
+    font-size: 28px;
+    margin-top: 10px;
+    text-shadow: 1px 1px #000;
+}
+
+/* Navigation */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 20px;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+nav ul li a:hover {
+    background: #ffcc00;
+    color: #003366;
+}
+
+/* Slideshow */
+section {
+    text-align: center;
+}
+
+.myslides {
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s;
+}
+
+.myslides:hover {
+    transform: scale(1.01);
+}
+
+/* Footer */
+footer {
+    background: #003366;
+    color: white;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer a {
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    text-align: center;
+}
+ /* Faculty Cards */
+.directory {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.directory h1 {
+  text-align: center;
+  color: #e9d30c;
+  margin-bottom: 20px;
+}
+
+.faculty-card {
+  display: flex;
+  align-items: center;
+  justify-content:  space-between;
+  background: white;
+  padding:  20px;
+  margin: 15px 0;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: transform 0.2s;
+padding-left: 0px;
+
+  
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 0PX;
+}
+.faculty-card:hover {
+  transform: translateY(-3px);
+}
+
+.faculty-card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-left: 20px;
+  margin-right: 30px;
+}
+
+.faculty-card h2 {
+  margin: 0;
+  font-size: 1.2em;
+  color: #0b2545;
+}
+
+.faculty-card p {
+  margin: 5px 0 0;
+  font-size: 0.95em;
+  color: #444;
+}
+
+.faculty-card a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  width: 100%;
+}
+
+
+.directory > a:hover {
+  background-color: #267047;
+}
+
+/* Add Faculty Button */
+.directory > a {
+  display: inline-block;
+  padding: 12px 32px;
+  background-color: #2e8b57;
+  color: white;
+  font-weight: 600;
+  font-size: 1em;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  margin-top: 20px;
+  transition: background 0.3s ease;
+
+}
+
+.directory > a:hover {
+  background-color: #256c45;
+}
+
+
+/* Responsive layout */
+@media (max-width: 768px) {
+    .faculty-card {
+        width: 90%;
+    }
+
+
+        }
+         .addfaculty{
+             body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        form {
+            background-color: #ffffff;
+            padding: 30px 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            width: 100%;
+        }
+
+        h1 {
+            text-align: center;
+            color:black;
+            margin-bottom: 25px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="file"],
+        textarea {
+            width: 100%;
+            padding: 10px 12px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            resize: vertical;
+            height: 100px;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            font-size: 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            width: 100%;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    }
+    
+      .animated-image {
+       animation: myAnimation 2s infinite; /* Duration and iteration */
+     }
+
+
+  .video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+.video-background video {
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+}
+.about{
+        /* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.8;
+}
+
+.header {
+    background-color: #003366;
+    color: white;
+    padding:0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0px auto;
+    padding: 0px;
+}
+
+.section {
+    margin-bottom: 40px;
+    margin-top: 40px;
+    margin-right: 40px;
+    margin-left: 40px;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.section h2 {
+    color: #003366;
+    margin-bottom: 15px;
+}
+
+.section p, .section ul {
+    font-size: 16px;
+}
+
+.section ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.section li {
+    margin-bottom: 10px;
+}
+
+
+}
+.profile {
+    max-width: 800px;
+    margin: 40px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.profile h1 {
+    text-align: center;
+    color: #003366;
+}
+
+.profile img {
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+    border: 2px solid #003366;
+}
+
+.profile p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.profile a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #003366;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.profile a:hover {
+    background-color: #002244;
+}
+.search-container{
+    .search-container {
+      text-align: center;
+    }
+
+    .search-box {
+      width: 300px;
+      padding: 10px;
+      font-size: 16px;
+      border: 2px solid #ccc;
+      border-radius: 25px;
+      outline: none;
+    }
+
+    .search-button {
+      padding: 10px 20px;
+      font-size: 16px;
+      margin-left: 10px;
+      border: none;
+      background-color: #4CAF50;
+      color: white;
+      border-radius: 25px;
+      cursor: pointer;
+    }
+
+    .search-button:hover {
+      background-color: #45a049;
+    }
+}
+/* Admin Login Page Styling */
+
+
+.login-container {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.login-container h2 {
+  color: #0c1c39;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1em;
+}
+
+.login-container input[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background-color: #2e8b57;
+  color: white;
+  font-size: 1em;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.login-container input[type="submit"]:hover {
+  background-color: #256c45;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+  font-size: 0.9em;
+}
+.faculty-form {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 500px;
+  margin: 30px auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.faculty-form input,
+.faculty-form textarea {
+  width: 100%;
+  margin: 10px 0;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1em;
+}
+
+.faculty-form input[type="submit"] {
+  background-color: #2e8b57;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.faculty-form input[type="submit"]:hover {
+  background-color: #256c45;
+}
+
+.nav-back {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.nav-back a {
+  color: #0c1c39;
+  text-decoration: none;
+  font-weight: bold;
+}
+.pagination {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.pagination a, .pagination strong {
+    display: inline-block;
+    margin: 0 5px;
+    padding: 8px 16px;
+    background-color: #003366;
+    color: white;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.pagination a:hover {
+    background-color: #ffcc00;
+    color: #003366;
+}
+
+.pagination strong {
+    background-color: #ffcc00;
+    color: #003366;
+}
+
